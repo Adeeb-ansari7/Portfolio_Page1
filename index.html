@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeeb Ansari | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AA<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="subtitle">Welcome to my portfolio</span>
+                <h1>Hi, I'm <span class="highlight">Adeeb Ansari</span></h1>
+                <h3>Computer Applications Postgraduate</h3>
+                <p class="description">
+                    Ambitious and detail-oriented Computer Applications postgraduate with hands-on experience building dynamic web development solutions using modern full-stack methodologies. Highly dedicated to active problem-solving, innovative development pipelines, and translating conceptual technical frameworks into production-ready software.
+                </p>
+                <div class="status-badge">
+                    <i class="fas fa-briefcase"></i> Status: Immediate Openings for Internships, Trainee Roles, & Freelance Projects
+                </div>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn primary-btn">Get In Touch</a>
+                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                </div>
+            </div>
+            
+            <div class="hero-img-container">
+                <div class="image-wrapper">
+                    <img src="Adeeb-Pic.jpeg" alt="Adeeb Ansari Profile Picture" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="languages">Languages</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend & DB</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-category="languages">
+                    <i class="fab fa-java skill-icon"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card" data-category="languages">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h3>JavaScript (ES6+)</h3>
+                </div>
+                <div class="skill-card" data-category="languages">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card" data-category="languages">
+                    <i class="fab fa-php skill-icon"></i>
+                    <h3>PHP</h3>
+                </div>
+                <div class="skill-card" data-category="languages">
+                    <span class="skill-icon-text">C</span>
+                    <h3>C / C++</h3>
+                </div>
+
+                <div class="skill-card" data-category="frontend">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <i class="fab fa-react skill-icon"></i>
+                    <h3>React.js</h3>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <i class="fas fa-laptop-code skill-icon"></i>
+                    <h3>Responsive Design</h3>
+                </div>
+
+                <div class="skill-card" data-category="backend">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <span class="skill-icon-text">Ex</span>
+                    <h3>Express.js</h3>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>RESTful Web APIs</h3>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>.NET Framework</h3>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <i class="fas fa-leaf skill-icon"></i>
+                    <h3>MongoDB</h3>
+                </div>
+
+                <div class="skill-card" data-category="tools">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <i class="fas fa-laptop-file skill-icon"></i>
+                    <h3>VS Code</h3>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <i class="fas fa-paper-plane skill-icon"></i>
+                    <h3>Postman</h3>
+                </div>
+                <div class="skill-card" data-category="tools">
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <h3>Cloud Computing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - 2027 (Pursuing)</div>
+                    <div class="timeline-content">
+                        <h3>Master of Computer Applications (MCA)</h3>
+                        <h4>Sikkim Manipal Institute of Technology (SMIT), Majhitar</h4>
+                        <p><strong>Core Domains:</strong> Advanced Web Development, Python Engineering, Enterprise Java, Cloud Computing Systems, PHP Frameworks, and .NET Architectures.</p>
+                        <p class="timeline-detail">Actively implementing laboratory exercises and core design concepts into independent software engineering projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Completed</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Computer Applications (BCA)</h3>
+                        <h4>Insan Degree College</h4>
+                        <p><strong>Core Competencies:</strong> Focused comprehensively on core programming fundamentals, abstract computer science concepts, object-oriented paradigms, and database management systems.</p>
+                        <p class="timeline-detail">Graduated with a solid theoretical foundation matching professional application layout standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects & Applications</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-database project-icon"></i>
+                        <span class="project-tag">Java & MySQL Stack</span>
+                    </div>
+                    <h3>Student Management System</h3>
+                    <p class="project-sub">Core Full-Lifecycle Database Application</p>
+                    <ul class="project-features">
+                        <li>Engineered and architected a comprehensive CRUD-based software management setup to efficiently add, update, track, and delete persistent student data records.</li>
+                        <li>Designed, mapped, and optimized table normalization schemas directly inside MySQL Server workflows.</li>
+                        <li>Solidified production skills in fundamental Object-Oriented Programming (OOP) architectures and robust schema transactional management.</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-laptop-code project-icon"></i>
+                        <span class="project-tag">Web Stack Layout</span>
+                    </div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p class="project-sub">Responsive Front-End Presentation Platform</p>
+                    <ul class="project-features">
+                        <li>Conceived, coded, and deployed a fully fluid and pixel-perfect professional personal website to display active tech projects.</li>
+                        <li>Coded custom asynchronous interaction features and intuitive component states with vanilla JavaScript (ES6+).</li>
+                        <li>Successfully highlighted multiple critical engineering capabilities, workflows, and academic summaries in an accessible layout.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for entry-level roles, trainee engineer tracks, or internship opportunities.</p>
+                    
+                    <div class="info-links">
+                        <a href="mailto:adeebansari7903@gmail.com" class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>adeebansari7903@gmail.com</span>
+                        </a>
+                        <a href="tel:+917296005251" class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7296005251</span>
+                        </a>
+                        <a href="https://wa.me/917296005251" target="_blank" class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+91 7296005251 (WhatsApp)</span>
+                        </a>
+                        <a href="https://linkedin.com/in/adeeb-ans-0a5a15343" target="_blank" class="info-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/adeeb-ans-0a5a15343</span>
+                        </a>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kisanganj, Bihar - 855117, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal-details">
+                    <h3>Core Competencies</h3>
+                    <ul class="soft-skills">
+                        <li><strong>Analytical Thinking:</strong> Skilled in identifying bottleneck complexities and optimizing processing rules.</li>
+                        <li><strong>Structured Execution:</strong> Adept at milestones planning, modular code segregation, and clean documentation management.</li>
+                        <li><strong>Collaboration:</strong> Productive team worker capable of aligning with multi-disciplinary stakeholders.</li>
+                    </ul>
+                    <div class="meta-details">
+                        <p><strong>Languages Spoken:</strong> English, Hindi</p>
+                        <p><strong>Nationality:</strong> Indian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Adeeb Ansari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
