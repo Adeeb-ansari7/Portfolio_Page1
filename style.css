@@ -1,5 +1,5 @@
 /* --- Root Variables for Theme Customization --- */
-/* :root {
+:root {
     --bg-primary: #f8fafc;
     --bg-secondary: #ffffff;
     --bg-navbar: rgba(255, 255, 255, 0.9);
@@ -22,7 +22,7 @@
     --accent-hover: #3b82f6;
     --border-color: #334155;
     --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-} */
+} 
 
 /* --- Global Reset & Styles --- */
 * {
