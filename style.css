@@ -1,4 +1,3 @@
-
 :root {
     --bg-primary: #F0FAFA;
     --bg-secondary: #FFFFFF;
@@ -32,8 +31,6 @@
     --card-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
-
-
 /* --- Global Reset & Styles --- */
 * {
     margin: 0;
@@ -43,8 +40,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: var(--ink-black);
 }
 
@@ -55,11 +51,11 @@ body {
     background: transparent !important;
     /* color: var(--text-main); */
     line-height: 1.6;
-    transition: background-color var(--transition-speed),
-                color var(--transition-speed);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-/* Blurred Background Image - No Colour Overlay */
+/* Background image */
+
 body::before {
     content: "";
     position: fixed;
@@ -68,14 +64,25 @@ body::before {
     pointer-events: none;
 
     background-image: url("mountain.jpeg");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    filter: blur(8px);
+    filter: blur(8px) brightness(1);
     transform: scale(1.03);
+    transition: filter 0.4s ease;
 }
+
+/* Night Mode - Darker Background */
+[data-theme="dark"] body::before {
+    filter: blur(7px) brightness(0.60);
+}
+
+/* Light Mode - Brighter Background */
+[data-theme="light"] body::before {
+    filter: blur(5px) brightness(0.8);
+}
+
 
 .container {
     width: 90%;
@@ -258,8 +265,7 @@ ul {
     padding: 12px 28px;
     border-radius: 6px;
     font-weight: 600;
-    transition: background-color var(--transition-speed),
-                transform var(--transition-speed);
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
 }
 
 .primary-btn {
@@ -351,8 +357,7 @@ ul {
     padding: 25px 20px;
     text-align: center;
     box-shadow: var(--card-shadow);
-    transition: transform var(--transition-speed),
-                opacity 0.3s ease;
+    transition: transform var(--transition-speed),opacity 0.3s ease;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
@@ -554,7 +559,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* color: var(--lavender); */
+/* color: var(--lavender); */
     box-shadow: var(--card-shadow);
 }
 
